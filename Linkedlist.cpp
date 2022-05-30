@@ -34,11 +34,15 @@ void InsertAtTail(Node* &tail,int e){
     tail -> next = temp;
     tail = tail->next;
 }
-void insertatPos(Node* & head, int pos, int d){
+void insertatPos(Node* &tail, Node* & head, int pos, int d){
     if(pos == 1){
         InsertAtHead(head, d);
         return;
     }
+    if(temp->next == NULL){
+        InsertAtTail(tail, d);
+        return;
+    };
     Node* temp = head;
     int cnt = 1;
     while(cnt < pos -1){
