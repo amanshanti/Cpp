@@ -61,7 +61,7 @@ int main(){
     InsertAtHead(head, 12);
     InsertAtHead(head, 15);
     InsertAtTail(tail,20);
-    insertatPos(head, 1, 8);
+    insertatPos(tail,head, 1, 8);
     
    
     cout << node1 -> data << endl;
